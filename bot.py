@@ -16,7 +16,7 @@ from vendeeglobe import (
 )
 from vendeeglobe.utils import distance_on_surface
 
-CREATOR = "TeamName"  # This is your team name
+CREATOR = "NewSun"  # This is your team name
 
 
 class Bot:
@@ -28,21 +28,48 @@ class Bot:
         self.team = CREATOR  # Mandatory attribute
         self.avatar = 1  # Optional attribute
         self.course = [
-            Checkpoint(latitude=43.797109, longitude=-11.264905, radius=50),
-            Checkpoint(longitude=-29.908577, latitude=17.999811, radius=50),
-            Checkpoint(latitude=-11.441808, longitude=-29.660252, radius=50),
-            Checkpoint(longitude=-63.240264, latitude=-61.025125, radius=50),
-            Checkpoint(latitude=2.806318, longitude=-168.943864, radius=1990.0),
-            Checkpoint(latitude=-62.052286, longitude=169.214572, radius=50.0),
-            Checkpoint(latitude=-15.668984, longitude=77.674694, radius=1190.0),
-            Checkpoint(latitude=-39.438937, longitude=19.836265, radius=50.0),
-            Checkpoint(latitude=14.881699, longitude=-21.024326, radius=50.0),
-            Checkpoint(latitude=44.076538, longitude=-18.292936, radius=50.0),
+            Checkpoint(latitude=47.259668, longitude=-12.307703, radius=50),
+            Checkpoint(latitude=35.556772, longitude=-28.877049, radius=50),
+            Checkpoint(latitude=4.157374, longitude=-26.943456, radius=50),
+            
+            Checkpoint(latitude=-4.798199, longitude=-21.494239, radius=50),
+            Checkpoint(latitude=-56.784356, longitude=-52.783300, radius=50),
+            Checkpoint(latitude=-56.784356, longitude=-52.783300, radius=50),  # Argentina
+
+            Checkpoint(latitude=-59.829657, longitude=-79.326271, radius=50),
+            Checkpoint(latitude=-28.350331, longitude=-134.519741, radius=50),
+            Checkpoint(latitude=-8.460766, longitude=-166.424428, radius=50), # Checkpoint 1
+            Checkpoint(latitude=-49.316100, longitude= -172.853949, radius=50),
+            Checkpoint(latitude=-49.303267, longitude=120.173395, radius=50),
+            Checkpoint(latitude=-13.831352, longitude=99.649492, radius=50),
+            Checkpoint(latitude=-14.311934, longitude=82.143549, radius=50), # Checkpoint 2
+            Checkpoint(latitude=-39.095684, longitude=33.919624, radius=50), # Africa
+            Checkpoint(latitude=-38.838873, longitude=9.147060, radius=50),
+            Checkpoint(latitude=-0.628860, longitude=-1.507954, radius=50),
+            Checkpoint(latitude=3.038772, longitude=-20.571164, radius=150),
+            Checkpoint(latitude=19.257600, longitude=-33.173621, radius=50),
+            # Checkpoint(latitude=47.374261, longitude=-36.040229, radius=50),
+            # Checkpoint(latitude=35.556772, longitude=-28.877049, radius=50),
+            Checkpoint(latitude=47.259668, longitude=-12.307703, radius=50),
             Checkpoint(
                 latitude=config.start.latitude,
                 longitude=config.start.longitude,
                 radius=5,
             ),
+            # Checkpoint(latitude=, longitude=, radius=50)
+            # Checkpoint(latitude=, longitude=, radius=50)
+            # Checkpoint(longitude=-63.240264, latitude=-61.025125, radius=50),
+            # Checkpoint(latitude=2.806318, longitude=-168.943864, radius=1990.0),
+            # Checkpoint(latitude=-62.052286, longitude=169.214572, radius=50.0),
+            # Checkpoint(latitude=-15.668984, longitude=77.674694, radius=1190.0),
+            # Checkpoint(latitude=-39.438937, longitude=19.836265, radius=50.0),
+            # Checkpoint(latitude=14.881699, longitude=-21.024326, radius=50.0),
+            # Checkpoint(latitude=44.076538, longitude=-18.292936, radius=50.0),
+            # Checkpoint(
+            #     latitude=config.start.latitude,
+            #     longitude=config.start.longitude,
+            #     radius=5,
+            # ),
         ]
 
     def run(
@@ -90,11 +117,7 @@ class Bot:
                 longitude2=ch.longitude,
                 latitude2=ch.latitude,
             )
-            jump = dt * np.linalg.norm(speed)
-            if dist < 2.0 * ch.radius + jump:
-                instructions.sail = min(ch.radius / jump, 1)
-            else:
-                instructions.sail = 1.0
+            instructions.sail = 1.0
             if dist < ch.radius:
                 ch.reached = True
             if not ch.reached:
