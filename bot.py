@@ -25,8 +25,9 @@ class Bot:
     """
 
     def __init__(self):
+        from pathlib import Path
         self.team = CREATOR  # Mandatory attribute
-        self.avatar = 1  # Optional attribute
+        self.avatar = str(Path(__file__).parent / Path("turtle.png"))  # Optional attribute
         self.course = [
             Checkpoint(latitude=47.259668, longitude=-12.307703, radius=50),
             Checkpoint(latitude=58.242263, longitude=-50.246452, radius=50),
