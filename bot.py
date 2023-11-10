@@ -59,11 +59,28 @@ class Bot:
             Checkpoint(latitude=61.322482, longitude=-168.653354, radius=5),
             Checkpoint(latitude=57.289452, longitude=-170.984819, radius=5),
             Checkpoint(latitude=52.360316, longitude=-171.544929, radius=5),  # Finally out of little islands!
-            Checkpoint(latitude=-8.460766, longitude=-166.424428, radius=50), # Checkpoint 1
-            Checkpoint(latitude=-49.316100, longitude= -172.853949, radius=50),
-            Checkpoint(latitude=-49.303267, longitude=120.173395, radius=50),
-            Checkpoint(latitude=-13.831352, longitude=99.649492, radius=50),
+            # Checkpoint(latitude=-8.460766, longitude=-166.424428, radius=50), 
+            Checkpoint(latitude=17.850557, longitude=-169.261167, radius=50),# Checkpoint 1
+            Checkpoint(latitude=8.705004, longitude=173.375068, radius=50),
+            Checkpoint(latitude=4.882734, longitude=173.432531, radius=50),
+            Checkpoint(latitude=3.288166, longitude=161.774183, radius=50), 
+            Checkpoint(latitude=4.621448, longitude=130.998087, radius=50),
+            Checkpoint(latitude=5.069115, longitude= 126.864848, radius=50),
+            
+            Checkpoint(latitude=1.640280, longitude=122.914325, radius=50), 
+            Checkpoint(latitude=2.040850, longitude=119.894179, radius=50),
+
+
+            Checkpoint(latitude=-3.324410, longitude=117.804409, radius=50),
+            Checkpoint(latitude=-8.080066, longitude=116.043850, radius=5),
+            Checkpoint(latitude=-8.787996, longitude=115.728954, radius=50), 
+            # # Checkpoint(latitude=-8.080066, longitude=116.043850, radius=50),
+
+            # Checkpoint(latitude=-49.316100, longitude= -172.853949, radius=50),
+            # Checkpoint(latitude=-49.303267, longitude=120.173395, radius=50),
+            # Checkpoint(latitude=-13.831352, longitude=99.649492, radius=50),
             Checkpoint(latitude=-14.311934, longitude=82.143549, radius=50), # Checkpoint 2
+
             Checkpoint(latitude=-39.095684, longitude=33.919624, radius=50), # Africa
             Checkpoint(latitude=-38.838873, longitude=9.147060, radius=50),
             Checkpoint(latitude=-0.628860, longitude=-1.507954, radius=50),
