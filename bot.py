@@ -65,9 +65,9 @@ class Bot:
             Checkpoint(latitude=4.882734, longitude=173.432531, radius=50),
             Checkpoint(latitude=3.288166, longitude=161.774183, radius=50), 
             Checkpoint(latitude=4.621448, longitude=130.998087, radius=50),
-            Checkpoint(latitude=5.069115, longitude= 126.864848, radius=50),
+            Checkpoint(latitude=5.069115, longitude= 126.864848, radius=5),
             
-            Checkpoint(latitude=1.640280, longitude=122.914325, radius=50), 
+            Checkpoint(latitude=1.640280, longitude=122.914325, radius=150), 
             Checkpoint(latitude=2.040850, longitude=119.894179, radius=50),
 
 
