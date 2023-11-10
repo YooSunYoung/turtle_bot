@@ -29,15 +29,35 @@ class Bot:
         self.avatar = 1  # Optional attribute
         self.course = [
             Checkpoint(latitude=47.259668, longitude=-12.307703, radius=50),
-            Checkpoint(latitude=35.556772, longitude=-28.877049, radius=50),
-            Checkpoint(latitude=4.157374, longitude=-26.943456, radius=50),
-            
-            Checkpoint(latitude=-4.798199, longitude=-21.494239, radius=50),
-            Checkpoint(latitude=-56.784356, longitude=-52.783300, radius=50),
-            Checkpoint(latitude=-56.784356, longitude=-52.783300, radius=50),  # Argentina
+            Checkpoint(latitude=58.242263, longitude=-50.246452, radius=50),
+            Checkpoint(latitude=74.369396, longitude=-63.317311, radius=50),
+            Checkpoint(latitude=74.243486, longitude=-78.445666, radius=50),
+            Checkpoint(latitude=74.137806, longitude=-88.763979, radius=50), 
+            Checkpoint(latitude=74.285566, longitude=-96.211784, radius=50), 
+            Checkpoint(latitude=74.484131, longitude=-98.880967, radius=50),
+            Checkpoint(latitude=74.348479, longitude=-107.717569, radius=50),
+            Checkpoint(latitude=73.784153, longitude=-111.685024, radius=50), 
+        
+            Checkpoint(latitude=73.799267, longitude=-113.872269, radius=50), 
+            Checkpoint(latitude=75.059851, longitude=-123.269867, radius=15), 
+            Checkpoint(latitude=74.425129, longitude=-126.274171, radius=5),
+            Checkpoint(latitude=71.108255, longitude=-128.696315, radius=50),
+            Checkpoint(latitude=69.858095, longitude=-136.182943, radius=50), 
+            Checkpoint(latitude=70.262470, longitude=-141.180715, radius=50),
+            Checkpoint(latitude=70.361510, longitude=-142.856392, radius=50), 
+            Checkpoint(latitude=70.582164, longitude= -147.732131, radius=50),
+            Checkpoint(latitude=70.746083, longitude=-149.286656, radius=50), 
 
-            Checkpoint(latitude=-59.829657, longitude=-79.326271, radius=50),
-            Checkpoint(latitude=-28.350331, longitude=-134.519741, radius=50),
+
+            Checkpoint(latitude=71.707721, longitude=-156.545591, radius=50), 
+            Checkpoint(latitude=69.414574, longitude=-169.977017, radius=15), 
+            Checkpoint(latitude=66.070089, longitude=-168.394463, radius=50), 
+            Checkpoint(latitude=65.714540, longitude=-168.518280, radius=5),
+            Checkpoint(latitude=64.331784, longitude=-168.878476, radius=5),
+            Checkpoint(latitude=63.490345, longitude=-166.661021, radius=5),
+            Checkpoint(latitude=61.322482, longitude=-168.653354, radius=5),
+            Checkpoint(latitude=57.289452, longitude=-170.984819, radius=5),
+            Checkpoint(latitude=52.360316, longitude=-171.544929, radius=5),  # Finally out of little islands!
             Checkpoint(latitude=-8.460766, longitude=-166.424428, radius=50), # Checkpoint 1
             Checkpoint(latitude=-49.316100, longitude= -172.853949, radius=50),
             Checkpoint(latitude=-49.303267, longitude=120.173395, radius=50),
@@ -48,28 +68,12 @@ class Bot:
             Checkpoint(latitude=-0.628860, longitude=-1.507954, radius=50),
             Checkpoint(latitude=3.038772, longitude=-20.571164, radius=150),
             Checkpoint(latitude=19.257600, longitude=-33.173621, radius=50),
-            # Checkpoint(latitude=47.374261, longitude=-36.040229, radius=50),
-            # Checkpoint(latitude=35.556772, longitude=-28.877049, radius=50),
             Checkpoint(latitude=47.259668, longitude=-12.307703, radius=50),
             Checkpoint(
                 latitude=config.start.latitude,
                 longitude=config.start.longitude,
                 radius=5,
-            ),
-            # Checkpoint(latitude=, longitude=, radius=50)
-            # Checkpoint(latitude=, longitude=, radius=50)
-            # Checkpoint(longitude=-63.240264, latitude=-61.025125, radius=50),
-            # Checkpoint(latitude=2.806318, longitude=-168.943864, radius=1990.0),
-            # Checkpoint(latitude=-62.052286, longitude=169.214572, radius=50.0),
-            # Checkpoint(latitude=-15.668984, longitude=77.674694, radius=1190.0),
-            # Checkpoint(latitude=-39.438937, longitude=19.836265, radius=50.0),
-            # Checkpoint(latitude=14.881699, longitude=-21.024326, radius=50.0),
-            # Checkpoint(latitude=44.076538, longitude=-18.292936, radius=50.0),
-            # Checkpoint(
-            #     latitude=config.start.latitude,
-            #     longitude=config.start.longitude,
-            #     radius=5,
-            # ),
+            )
         ]
 
     def run(
